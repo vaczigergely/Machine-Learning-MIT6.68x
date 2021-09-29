@@ -7,8 +7,12 @@ def randomization(n):
     Returns:
       A - a randomly-generated nx1 Numpy array.
     """
-    #Your code here
-    raise NotImplementedError
+    x = np.random.random(n)
+    A = np.array(x)
+    A.shape = 3,1
+    print(A)
+
+    return A
 
 def operations(h, w):
     """
@@ -70,3 +74,4 @@ def vector_function(x, y):
     #Your code here
     raise NotImplementedError
 
+print(randomization(3))
